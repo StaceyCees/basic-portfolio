@@ -1,0 +1,514 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    overflow-x: hidden;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  /*---------------------------------------
+    FONTS              
+  -----------------------------------------*/
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+  }
+  
+  h1,h2,h3 {
+    font-family: 'Spectral', serif;
+  }
+  
+  h1 {
+    color: #353535;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  
+  h2 {
+    color: #19191f;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 0;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  h4 {
+    color: #505050;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+  
+  h5 {
+    color: #757575;
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  p {
+    color: #959595;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+  
+  
+  /*---------------------------------------
+    BUTTONS               
+  -----------------------------------------*/
+  
+  .section-btn {
+    margin: 32px 0 0 0;
+    padding: 0;
+  }
+  
+  .section-btn a,
+  .section-btn button {
+    line-height: 40px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    color: #ffffff;
+    font-weight: normal;
+  }
+  
+  .section-btn a span,
+  .section-btn button span {
+    position: relative;
+    display: inline-block;
+    font-weight: normal;
+    padding: 0 25px;
+    background: #5050FF;
+    border-radius: 1px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+  
+  .csstransforms3d .section-btn a span::before,
+  .csstransforms3d .section-btn button span::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    border-radius: 1px;
+    color: #ffffff;
+    padding: 0 25px;
+    content: attr(data-hover);
+    -webkit-transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+  
+  .section-btn a:hover span,
+  .section-btn a:focus span,
+  
+  .section-btn button:hover span,
+  .section-btn button:focus span {
+    -webkit-transform: rotateX(90deg) translateY(-22px);
+    -moz-transform: rotateX(90deg) translateY(-22px);
+    transform: rotateX(90deg) translateY(-22px);
+  }
+  
+  .csstransforms3d .section-btn a:hover span::before,
+  .csstransforms3d .section-btn a:focus span::before,
+  
+  .csstransforms3d .section-btn button:hover span::before,
+  .csstransforms3d .section-btn button:hover span::before {
+    background: #000000;  
+  }
+  
+  
+  
+  /*---------------------------------------
+    GENERAL               
+  -----------------------------------------*/
+  
+  html{
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  a {
+    color: #5050FF;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  a:hover, a:active, a:focus {
+    color: #000000;
+    outline: none;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  
+  .section-title {
+    position: relative;
+    padding-bottom: 22px;
+  }
+  
+  #about img, .team-item img,
+  .project-item img, #project-detail img,
+  #client img,
+  #contact img {
+    border-radius: 1px;
+    width: 100%;
+  }
+  
+  #contact-info, footer {
+    text-align: center;
+  }
+  
+  
+  
+  /*---------------------------------------
+    MENU             
+  -----------------------------------------*/
+  
+.topnav {
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 5px;
+}
+
+  .navbar-header{
+    width: 960px;
+    height: auto;
+  }
+
+  .navbar-default {
+    border: none;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    padding-top: 45px;
+  }
+  
+  .navbar-default .navbar-brand {
+    color: #454545;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 40px;
+  }
+  
+  .navbar-default .navbar-nav li a {
+    font-size: 16px;
+    color: #757575;
+    line-height: 40px;
+    padding-right: 22px;
+    padding-left: 22px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+  }
+  
+  .navbar-default .navbar-nav li a:hover {
+    color: #454545;
+  }
+  
+  .navbar-default .navbar-nav li.active > a {
+    background-color: transparent;
+    color: #5050FF;
+  }
+  
+  .navbar-default .navbar-toggle {
+    border: none;
+    padding-top: 10px;
+  }
+  
+  .navbar-default .navbar-toggle {
+    background-color: transparent;
+  }
+  
+  .navbar-default .navbar-toggle .icon-bar {
+    background: #5050FF;
+    border-color: transparent;
+  }
+  
+  
+  
+  /*---------------------------------------
+    HOME             
+  -----------------------------------------*/
+  
+  #home {
+    height: 85vh;
+    position: relative;
+    padding-top: 235px;
+  }
+  
+  
+  
+  /*---------------------------------------
+    HEADER         
+  -----------------------------------------*/
+  
+  #header {
+    padding: 102px 0 62px 0;
+  }
+  
+  #header .header-text {
+    padding-top: 62px;
+  }
+  
+  
+  
+  /*---------------------------------------
+    ABOUT              
+  -----------------------------------------*/
+  
+.about-content {
+  background-image: assets/images/dust_scratches.png;
+  height: 150px;
+  width: 170px;
+  float: left;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  margin-left: 160px;
+}
+
+  .about-text{
+    background-image: assets/images/dust_scratches.png;
+    float: left;
+    margin-bottom: 100px;
+  }
+
+  .clearfix {
+    overflow: auto;
+}
+
+  .about-info {
+    text-align: center;
+    padding: 62px 0 42px 0;
+  }
+  
+  .about-info h1 {
+    padding-bottom: 6px;
+  }
+  
+  .about-info:after {
+    content: "";
+    background: #000;
+    width: 14%;
+    height: 2px;
+    position: relative;
+    display: block;
+    margin: 22px auto 0 auto;
+  }
+  
+  .about-service-text {
+    padding: 62px 0;
+ 
+  }
+  
+
+  .about-service-text .section-title {
+    padding-bottom: 0px;
+  }
+  
+  .about-service-text ul li {
+    color: #575757;
+    list-style: square;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    padding: 2px 0;
+  }
+  
+  
+  
+  /*---------------------------------------
+    PORTFOLIO             
+  -----------------------------------------*/
+  
+
+  .img-container {
+
+     /* if you want space between the images */
+  }
+  
+.p-image-1 {
+  height: 200px;
+    width: 33%;
+    padding: 5px;
+    margin-bottom: 200px;
+    float: left;
+  }
+
+    .p-image-2 {
+      height: 200px;
+        width: 33%;
+        padding: 5px;
+        margin-bottom: 200px;
+        float: left;
+      }
+
+        .p-image-3 {
+          height: 200px;
+            width: 33%;
+            padding: 5px;
+            margin-bottom: 200px;
+          float: left;
+          } 
+
+       
+
+          .clearfix {
+            overflow: auto;
+        }
+
+
+  
+  
+  /*---------------------------------------
+    CONTACT             
+  -----------------------------------------*/
+  
+#contact-header {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+  #contact .text-success,
+  #contact .text-danger {
+    display: none;
+    padding: 0 0 5px 20px;
+  }
+  
+  #contact .form-control {
+    border: 1px solid #f2f2f2;
+    border-radius: 0px;
+    box-shadow: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 22px;
+    -webkit-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #contact .form-control:focus {
+    border-color: #d9d9d9;
+    align-content: center
+  }
+  
+  #contact input {
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #contact .section-btn {
+    margin: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #contact .section-btn button {
+    line-height: 45px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #contact button#cf-submit {
+    border: none;
+    width: auto;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  .contact-image {
+    padding: 82px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  .contact-address {
+    padding-top: 132px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  .contact-address h3:last-child {
+    margin: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  
+  
+  /*---------------------------------------
+    FOOTER              
+  -----------------------------------------*/
+  
+  footer {
+    border-top: 1px solid #f9f9f9;
+    padding: 20px 0 20px 0;
+  }
+  
+  .footer-copyright p {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+  
+  .footer-copyright span {
+    display: inline-block;
+    padding: 0 4px 0 4px;
+  }
+  
+  
+  
+  
+  
